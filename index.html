@@ -1,120 +1,165 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <title>Web lb 1</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/main.css" rel="stylesheet">
-    </head>
-    <body>
+<head>
+    <title>Web lb 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-        <header>
-            <span>
-                <h3>Lb 1, КІУКІ-19-7, Риков В.А</h3>
-            </span>
-        </header>
+<header>
+    <nav style="display: flex; justify-content: space-around">
+        <span style="font-size: 24px"><a href="#">Головна</a></span>
+        <span style="font-size: 24px"><a href="html/animals.html">Тварини</a></span>
+        <span style="font-size: 24px"><a href="html/about.html">Про нас</a></span>
+    </nav>
+</header>
+
+<!--Форма пошуку-->
+<div>
+    <h3>Пошук тварин</h3>
+    <form action="#" method="get">
+        <label for="search">Пошук:</label>
+        <input type="text" id="search" name="search" placeholder="Знайти...">
+        <input type="submit" value="Знайти">
+    </form>
+</div>
+<br>
+
+<!--Таблиця тврин -->
+<div>
+    <table>
+        <caption>Домашні твирини</caption>
+        <thead>
+        <tr>
+            <th>Ім'я</th>
+            <th>Тип</th>
+            <th>Опис</th>
+            <th>Вартість</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Белла</td>
+            <td>Кішка</td>
+            <td style="text-align: center">Грайлива та цікавитися навколишнім світом</td>
+            <td>2000 <i>грн.</i></td>
+        </tr>
+        <tr>
+            <td>Томми</td>
+            <td>Собака</td>
+            <td style="text-align: center">Спокійна натура, вірнимий захисник своїх господарів</td>
+            <td>2000 <i>грн.</i></td>
+        </tr>
+        <tr>
+            <td>Чарли</td>
+            <td>Рибка</td>
+            <td style="text-align: center">Миролюбні та спокійні, віддаючи перевагу проводити час плаваючи в своїх
+                акваріумах
+            </td>
+            <td>200 <i>грн.</i></td>
+        </tr>
+        <tr>
+            <td>Гарфилд</td>
+            <td>Черепаха</td>
+            <td style="text-align: center">Спокійнима та розмірена, віддаючи перевагу проводити більшу частину часу на
+                сонці
+            </td>
+            <td>13000 <i>грн.</i></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+
+<!--Таблиця погоди-->
+<div>
+    <table>
+        <caption>Погода у Харкові</caption>
+        <thead>
+        <tr>
+            <th>Дата</th>
+            <th>Температура (°C)</th>
+            <th>Опис</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>01.03.2023</td>
+            <td>5</td>
+            <td>Снігопад</td>
+        </tr>
+        <tr>
+            <td>02.03.2023</td>
+            <td>1</td>
+            <td>Повітряно</td>
+        </tr>
+        <tr>
+            <td>03.03.2023</td>
+            <td>7</td>
+            <td>Ясно</td>
+        </tr>
+        <tr>
+            <td>04.03.2023</td>
+            <td>8</td>
+            <td>Хмарно</td>
+        </tr>
+        <tr>
+            <td>05.03.2023</td>
+            <td>3</td>
+            <td>Ясно</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+
+<!--Спиосок-->
+<div>
+    <h5>Дворівневий список, що показує розподіл груп факультету КІУ за спеціальностями СП, КСМ та СКС</h5>
+    <ul>
+        <li>КСМ
+            <ul>
+                <li>КСМм-22-1</li>
+                <li>КСМм-22-2</li>
+            </ul>
+        </li>
+        <li>СКС
+            <ul>
+                <li>СКСм-22-1</li>
+                <li>СКСм-22-2</li>
+            </ul>
+        </li>
+        <li>СП
+            <ul>
+                <li>СПм-22-1</li>
+                <li>СПм-22-2</li>
+                <li>СПм-22-3</li>
+                <li>СПм-22-4</li>
+                <li>СПм-22-5</li>
+                <li>СПм-22-6</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br>
+
+
+<!--Спиосок-->
+<div>
+    <h4><b>Коментарі</b></h4>
+    <p>
+        <i>Олена:</i>
         <br>
+        Хімічна реакція <b>ортофосфорної</b>
+        <br>
+        кислоти: P<sub>2</sub>O<sub>5</sub> + 3H<sub>2</sub>O &#10565;
+        H<sub>3</sub>PO<sub>4</sub>
+    </p>
+</div>
 
-        <div class="col-2">
-
-            <!--Спиосок-->
-            <div>
-                <p>Хімічна реакція <b>ортофосфорної</b></p>
-                <p>кислоти: P<sub>2</sub>O<sub>5</sub> + 3H<sub>2</sub>O &rarrpl;
-                    H<sub>3</sub>PO<sub>4</sub>
-                </p>
-            </div>
-            <br>
-
-            <!--Таблиця -->
-            <div>
-                <table>
-                    <caption>Погода у Харкові</caption>
-                    <thead>
-                    <tr>
-                        <th>Дата</th>
-                        <th>Температура (°C)</th>
-                        <th>Опис</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>01.03.2023</td>
-                        <td>5</td>
-                        <td>Снігопад</td>
-                    </tr>
-                    <tr>
-                        <td>02.03.2023</td>
-                        <td>1</td>
-                        <td>Повітряно</td>
-                    </tr>
-                    <tr>
-                        <td>03.03.2023</td>
-                        <td>7</td>
-                        <td>Ясно</td>
-                    </tr>
-                    <tr>
-                        <td>04.03.2023</td>
-                        <td>8</td>
-                        <td>Хмарно</td>
-                    </tr>
-                    <tr>
-                        <td>05.03.2023</td>
-                        <td>3</td>
-                        <td>Ясно</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <br>
-
-            <!--Спиосок-->
-            <div>
-                <h5>Дворівневий список, що показує розподіл груп факультету КІУ за спеціальностями СП, КСМ та СКС</h5>
-                <ul>
-                    <li>КСМ
-                        <ul>
-                            <li>КСМм-22-1</li>
-                            <li>КСМм-22-2</li>
-                        </ul>
-                    </li>
-                    <li>СКС
-                        <ul>
-                            <li>СКСм-22-1</li>
-                            <li>СКСм-22-2</li>
-                        </ul>
-                    </li>
-                    <li>СП
-                        <ul>
-                            <li>СПм-22-1</li>
-                            <li>СПм-22-2</li>
-                            <li>СПм-22-3</li>
-                            <li>СПм-22-4</li>
-                            <li>СПм-22-5</li>
-                            <li>СПм-22-6</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <br>
-
-        </div>
-
-        <div class="col-2">
-            <!--Форма пошуку-->
-            <div>
-                <h3>Форма для пошуку.</h3>
-                <form action="#" method="get">
-                    <label for="search">Пошук:</label>
-                    <input type="text" id="search" name="search" placeholder="Введіть пошуковий запит...">
-                    <input type="submit" value="Знайти">
-                </form>
-            </div>
-            <br>
-        </div>
-
-        <footer>
-            <p>Footer</p>
-        </footer>
-    </body>
+<footer>
+    <p>Footer Copyright &circledast;2023</p>
+</footer>
+</body>
 </html>
